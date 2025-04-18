@@ -1,5 +1,5 @@
 # ChunkedHttp200_OK_proxy
-Python HTTP proxy with keepalive, chunking and "200 OK" header IMMEDIATELY upon connect
+Python 3 HTTP proxy with keepalive, chunking and "200 OK" header IMMEDIATELY upon connect
 
 I wrote this proxy to stand inbetween N8N LLM workflows (Embeddings step, specifically) due to n8n's reliance upon Undici's default "3e5" millisecond (300 second / 5 minute) timeout for HTTP requests. This timeout manifests itself as "Headers Timeout Error" or "Body Timeout Error" when trying to use locally-running embeddings.
 
